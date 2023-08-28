@@ -1,0 +1,28 @@
+Name;Description;Type(Format)
+OP_CARRIER;Airline Identifier;STRING
+ORIGIN;Starting Airport Code (IATA Code);STRING
+DEST;Destination Airport Code (IATA Code);STRING
+CANCELLATION_CODE;"Reason for Cancellation of flight: A - Airline/Carrier; B - Weather; C - National Air System; D - Security";STRING
+LATE_AIRCRAFT_DELAY;Delay caused by aircraft reaching late;STRING
+OP_CARRIER_FL_NUM;Flight Number;INTEGER
+CRS_DEP_TIME;Planned Departure Time;INTEGER
+CRS_ARR_TIME;Planned arrival time;INTEGER
+DEP_TIME;Actual Departure Time;FLOAT
+DEP_DELAY;Total Delay on Departure in minutes;FLOAT
+TAXI_OUT;The time duration elapsed between departure from the origin airport gate and wheels off;FLOAT
+WHEELS_OFF;The time point that the aircraft?s wheels leave the ground;FLOAT
+WHEELS_ON;The time point that the aircraft?s wheels touch on the ground;FLOAT
+TAXI_IN;The time duration elapsed between wheels-on and gate arrival at the destination airport;FLOAT
+ARR_TIME;Actual Arrival Time;FLOAT
+ARR_DELAY;Total Delay on Arrival in minutes;FLOAT
+CANCELLED;Flight Cancelled (1 = cancelled);FLOAT
+DIVERTED;Aircraft landed on airport that out of schedule;FLOAT
+CRS_ELAPSED_TIME;Planned time amount needed for the flight trip;FLOAT
+ACTUAL_ELAPSED_TIME;AIR_TIME+TAXI_IN+TAXI_OUT;FLOAT
+AIR_TIME;The time duration between wheels_off and wheels_on time;FLOAT
+DISTANCE;Distance between two airports;FLOAT
+CARRIER_DELAY;Delay caused by the airline in minutes;FLOAT
+WEATHER_DELAY;Delay caused by weather;FLOAT
+NAS_DELAY;Delay caused by air system;FLOAT
+SECURITY_DELAY;Delay caused by security;FLOAT
+FL_DATE;Date of the flight;DATE (yy/mm/dd)
